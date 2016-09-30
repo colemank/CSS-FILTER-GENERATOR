@@ -23,15 +23,33 @@ html body{
 			height: 70%;
 			max-width: 100%;
 			background-color:whitesmoke;
-			border: 30px solid #1a7a0b;
+			border: 30px solid #fff;
 		}
 		.container-code{
+			font-family:"Lucida Console", Monaco, monospace;
 			position:relative;
 			display:block;
 			height: 30%;
 			max-width: 100%;
 			background-color:#222721;
-			border:30px inset #969696;
+			border:30px solid transparent;
+			-moz-border-image: -moz-linear-gradient(-45deg, rgba(150,150,150,1) 0%, rgba(66,66,66,1) 100%);
+			-webkit-border-image: -webkit-linear-gradient(-45deg, rgba(150,150,150,1) 0%, rgba(66,66,66,1) 100%);
+			border-image: linear-gradient(135deg, rgba(150,150,150,1) 0%, rgba(66,66,66,1) 100%);
+			border-image-slice: 1; 
+			.container-code-holder{
+				position:relative;
+				display:flex;
+				justify-content: center;
+				align-items: center;
+				height: 100%;
+				max-width: 100%;
+				background-color:#222721;
+
+				.code{
+					color:#159b00;
+				}
+			}
 		}
 	}
 	.container-settings{
